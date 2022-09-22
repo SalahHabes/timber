@@ -1,0 +1,250 @@
+$color1: #ffffff;
+$color2: #025400;
+$color3: #131313;
+$sidepadding: 5vw;
+$roundness: 0.3;
+$logofont: monospace;
+$linksfont: monospace;
+$catchphrasefont: sans-serif;
+$descriptionfont: 'Trebuchet MS';
+$dealsfont: $descriptionfont;
+$buttonfont: $catchphrasefont;
+$footerfont: $descriptionfont;
+
+body {
+    background-color: $color1;
+    margin: 0;
+}
+
+
+.button {
+    color: $color1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-family: $descriptionfont;
+    border-radius: $roundness * 1rem;
+    box-sizing: border-box;
+}
+
+.button1 {
+    background-color: $color3;
+}
+
+.button2 {
+    background-color: none;
+    border: solid $color1 0.2rem;
+}
+
+.button3 {
+    background-color: none;
+    border: solid $color3 0.2rem;
+    color: #131313;
+}
+
+.icon {
+    width: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.timber {
+    font-family: $logofont;
+    display: flex;
+    align-items: center;
+    color: $color1;
+    display: inline;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color2;
+    margin: 0;
+    padding: 2rem $sidepadding 3rem $sidepadding;
+
+    .menu {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.menuicon {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+}
+
+.links {
+    font-family: $linksfont;
+    display: none;
+    position: relative;
+    width: fit-content;
+    a {
+        color: $color1;
+        padding-right: 1rem;
+        text-decoration: none;
+    }
+    z-index: 2;
+    top: 2rem;
+}
+
+.menuicon:hover .links {
+    display: block;
+    
+}
+
+.catchphrase {
+    font-family: $catchphrasefont;
+    color: $color1;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.landing {
+    background-color: $color2;
+    padding: 0 $sidepadding;
+    .button {
+        margin-bottom: 3rem;
+    }
+}
+
+.trees {
+    position: relative;
+    top: 0.5rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+$tsMulti: 1.2;
+@function multiplier ($treeSize, $tSmultiplier) {
+    $result: $treeSize * $tSmultiplier;
+    @return $result;
+}
+
+#tree1 {
+    width: multiplier(6, $tsMulti) * 1rem;
+}
+
+#tree2 {
+    width: multiplier(3, $tsMulti) * 1rem;
+    margin-right: 4vw;
+}
+
+#tree3 {
+    width: multiplier(10, $tsMulti) * 1rem;
+}
+
+.description {
+    font-family: $descriptionfont;
+    display: flex;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    padding: 5rem $sidepadding;
+    justify-content: space-around;
+}
+
+.sphere {
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: $color2;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+}
+
+#tree4 {
+    position: relative;
+    top: 0.5rem;
+}
+
+.description-text {
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 5rem;
+    width: 60%;
+}
+
+.deals {
+    font-family: $descriptionfont;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: $sidepadding;
+    
+    .deal {
+        box-sizing: border-box;
+        border: solid $color3 0.2rem;
+        border-radius: $roundness * 1rem;
+        font-size: 2rem;
+        height: fit-content;
+        margin-top: 3rem;
+        padding: 0 1rem;
+        text-align: center;
+        width: 20rem;
+        
+        .title {
+            border-bottom: solid $color3 0.2rem;
+        }
+
+        .price {
+            font-weight: bolder;
+            border-bottom: 0.5rem;
+        }
+
+        ul {
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .button {
+            width: 100%;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+    }
+}
+
+footer {
+    font-family: $footerfont;
+    background-color: $color2;
+    color: #ffffff;
+    padding: 3rem $sidepadding;
+}
+
+@media only screen and (min-width: 500px) {
+    
+    .links {
+        display: inline;
+    }
+
+    .menuicon {
+        display: none;
+    }
+    
+   
+    .catchphrase {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 895px) {
+     
+    .landing {
+        height: 35rem;
+    }
+
+    .trees {
+        position: absolute;
+        right: 5vw;
+        top: 14rem;
+        width: fit-content;
+    }
+}
