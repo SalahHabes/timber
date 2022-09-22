@@ -1,7 +1,7 @@
 $color1: #ffffff;
 $color2: #025400;
 $color3: #131313;
-$sidepadding: 5vw;
+$sidepadding: 1.5rem;
 $roundness: 0.3;
 $logofont: monospace;
 $linksfont: monospace;
@@ -19,34 +19,39 @@ body {
 
 .button {
     color: $color1;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 10rem;
-    height: 5rem;
-    font-size: 1.5rem;
+    width: 7.125rem;
+    height: 2.9375rem;
+    font-size: 0.6875rem;
     font-family: $descriptionfont;
     border-radius: $roundness * 1rem;
     box-sizing: border-box;
-}
-
-.button1 {
+    font-weight: 700;
+    border: solid $color1 0.2rem;
     background-color: $color3;
 }
 
+.downloadButtons {
+    display: inline-block;
+    width: fit-content;
+}
+.button1 {
+    border: 0;
+}
+
 .button2 {
-    background-color: none;
-    border: solid $color1 0.2rem;
+    background-color: transparent;
 }
 
 .button3 {
-    background-color: none;
-    border: solid $color3 0.2rem;
+    background-color: transparent;
     color: #131313;
 }
 
 .icon {
-    width: 1.5rem;
+    width: 1.35375rem;
     margin-right: 0.3rem;
 }
 
@@ -56,7 +61,7 @@ body {
     align-items: center;
     color: $color1;
     display: inline;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: normal;
     margin: 0;
 }
@@ -102,7 +107,7 @@ body {
 .catchphrase {
     font-family: $catchphrasefont;
     color: $color1;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bolder;
     margin-bottom: 3rem;
 }
@@ -110,35 +115,30 @@ body {
 .landing {
     background-color: $color2;
     padding: 0 $sidepadding;
+
     .button {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 }
 
 .trees {
-    position: relative;
-    top: 0.5rem;
+    display: block;
     width: fit-content;
-    margin: 0 auto;
-}
-
-$tsMulti: 1.2;
-@function multiplier ($treeSize, $tSmultiplier) {
-    $result: $treeSize * $tSmultiplier;
-    @return $result;
+    position: absolute;
+    top: 12.9375rem;
+    right: 1.5rem;
 }
 
 #tree1 {
-    width: multiplier(6, $tsMulti) * 1rem;
+    width: 2.756875rem;
 }
 
 #tree2 {
-    width: multiplier(3, $tsMulti) * 1rem;
-    margin-right: 4vw;
+    width: 1.735625rem;
 }
 
 #tree3 {
-    width: multiplier(10, $tsMulti) * 1rem;
+    width: 6.075625rem;
 }
 
 .description {
