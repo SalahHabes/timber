@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $c_green;
+    margin: 0;
+    padding: 2rem $sidepadding 3rem $sidepadding;
+
+    .menu {
+        display: inline-flex;
+        align-items: center;
+    }
+}

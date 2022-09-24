@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+footer {
+    background-color: $c_green;
+    color: $c_white;
+    font-family: $footerfont;
+    margin-top: 3rem;
+    padding: 3rem $sidepadding;
+
+    .timber {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.sphere {
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: $c_green;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    .tree {
+        position: relative;
+        top: 0.5rem;
+    }
+}

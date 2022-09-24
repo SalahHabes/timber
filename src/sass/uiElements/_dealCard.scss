@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.dealCard {
+    box-sizing: border-box;
+    border: solid $c_dark 0.2rem;
+    border-radius: $roundness * 1rem;
+    font-size: 2rem;
+    height: fit-content;
+    margin-top: 3rem;
+    padding: 0 1rem;
+    text-align: center;
+    width: 20rem;
+    
+    .title {
+        border-bottom: solid $c_dark 0.2rem;
+    }
+
+    .price {
+        font-weight: bolder;
+        border-bottom: 0.5rem;
+    }
+
+    ul {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .uiButton, .uiButton--Trans--Dark {
+        width: 100%;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+}

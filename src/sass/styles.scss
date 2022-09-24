@@ -1,53 +1,10 @@
-$color1: #ffffff;
-$color2: #025400;
-$color3: #131313;
-$sidepadding: 1.5rem;
-$roundness: 0.3;
-$logofont: monospace;
-$linksfont: monospace;
-$catchphrasefont: sans-serif;
-$descriptionfont: 'Trebuchet MS';
-$dealsfont: $descriptionfont;
-$buttonfont: $catchphrasefont;
-$footerfont: $descriptionfont;
+@use './abstracts' as *;
+@use './uiElements' as *;
+@use './sections' as *;
 
 body {
-    background-color: $color1;
+    background-color: $c_white;
     margin: 0;
-}
-
-
-.button {
-    color: $color1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 7.125rem;
-    height: 2.9375rem;
-    font-size: 0.6875rem;
-    font-family: $descriptionfont;
-    border-radius: $roundness * 1rem;
-    box-sizing: border-box;
-    font-weight: 700;
-    border: solid $color1 0.2rem;
-    background-color: $color3;
-}
-
-.downloadButtons {
-    display: inline-block;
-    width: fit-content;
-}
-.button1 {
-    border: 0;
-}
-
-.button2 {
-    background-color: transparent;
-}
-
-.button3 {
-    background-color: transparent;
-    color: #131313;
 }
 
 .icon {
@@ -59,24 +16,11 @@ body {
     font-family: $logofont;
     display: flex;
     align-items: center;
-    color: $color1;
+    color: $c_white;
     display: inline;
     font-size: 3rem;
     font-weight: normal;
     margin: 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: $color2;
-    margin: 0;
-    padding: 2rem $sidepadding 3rem $sidepadding;
-
-    .menu {
-        display: inline-flex;
-        align-items: center;
-    }
 }
 
 .menuicon {
@@ -91,7 +35,7 @@ body {
     position: relative;
     width: fit-content;
     a {
-        color: $color1;
+        color: $c_white;
         padding-right: 1rem;
         text-decoration: none;
     }
@@ -106,17 +50,17 @@ body {
 
 .catchphrase {
     font-family: $catchphrasefont;
-    color: $color1;
+    color: $c_white;
     font-size: 3rem;
     font-weight: bolder;
     margin-bottom: 3rem;
 }
 
 .landing {
-    background-color: $color2;
+    background-color: $c_green;
     padding: 0 $sidepadding;
 
-    .button {
+    .uiButton, .uiButton--Trans {
         margin-bottom: 1rem;
     }
 }
@@ -150,73 +94,10 @@ body {
     justify-content: space-around;
 }
 
-.sphere {
-    display: inline-flex;
-    justify-content: space-around;
-    background-color: $color2;
-    border-radius: 50%;
-    height: 20rem;
-    width: 20rem;
-}
-
-#tree4 {
-    position: relative;
-    top: 0.5rem;
-}
-
 .description-text {
     text-align: justify;
     text-justify: auto;
     text-indent: 5rem;
-    width: 60%;
-}
-
-.deals {
-    font-family: $descriptionfont;
-    background-color: $color1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: $sidepadding;
-    
-    .deal {
-        box-sizing: border-box;
-        border: solid $color3 0.2rem;
-        border-radius: $roundness * 1rem;
-        font-size: 2rem;
-        height: fit-content;
-        margin-top: 3rem;
-        padding: 0 1rem;
-        text-align: center;
-        width: 20rem;
-        
-        .title {
-            border-bottom: solid $color3 0.2rem;
-        }
-
-        .price {
-            font-weight: bolder;
-            border-bottom: 0.5rem;
-        }
-
-        ul {
-            text-align: left;
-            font-size: 1rem;
-        }
-
-        .button {
-            width: 100%;
-            margin-bottom: 1rem;
-            position: relative;
-        }
-    }
-}
-
-footer {
-    font-family: $footerfont;
-    background-color: $color2;
-    color: #ffffff;
-    padding: 3rem $sidepadding;
 }
 
 @media only screen and (min-width: 500px) {

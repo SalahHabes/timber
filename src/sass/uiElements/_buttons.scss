@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+.uiButton {
+    background-color: $c_dark;
+    border: 0;
+    color: $c_white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 7.125rem;
+    min-height: 2.9375rem;
+    font-size: 0.6875rem;
+    font-family: $descriptionfont;
+    border-radius: $roundness * 1rem;
+    box-sizing: border-box;
+    font-weight: 700;
+    cursor: pointer;
+
+    &--Trans {
+        @extend .uiButton;
+        background-color: transparent;
+        border: solid $c_white 0.2rem;
+
+        &--Dark {
+            @extend .uiButton--Trans;
+            border-color: $c_dark;
+            color: $c_dark;
+        }
+    }
+
+}

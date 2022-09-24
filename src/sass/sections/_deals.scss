@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.deals {
+    font-family: $descriptionfont;
+    background-color: $c_white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: $sidepadding; 
+}
