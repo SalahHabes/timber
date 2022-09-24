@@ -1,7 +1,9 @@
-$logofont: monospace;
-$linksfont: monospace;
-$catchphrasefont: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Ruda:wght@400;900&family=Saira&display=swap');
+
+$logofont: 'Saira', monospace;
+$linksfont: 'Ruda', monospace;
+$catchphrasefont: 'Barlow Condensed', sans-serif;
 $descriptionfont: 'Trebuchet MS';
-$dealsfont: $descriptionfont;
-$buttonfont: $catchphrasefont;
+$dealsfont: 'Ruda', monospace;
+$buttonfont: 'Ruda', monospace;
 $footerfont: $descriptionfont;

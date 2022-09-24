@@ -17,20 +17,18 @@
     position: relative;
     display: inline-block;
     width: 2rem;
+    cursor: pointer;
 }
 
 .links {
     font-family: $linksfont;
     display: none;
-    position: relative;
     width: fit-content;
     a {
         color: $c_white;
         padding-right: 1rem;
         text-decoration: none;
     }
-    z-index: 2;
-    top: 2rem;
 }
 
 .menuicon:hover .links {
@@ -48,4 +46,11 @@
         display: none;
     }
     
+}
+
+@media only screen and (min-width: $mediaBreakPoint4) {
+    .navbar {
+        padding-left: $sidepadding2 * 1rem;
+        padding-right: $sidepadding2 * 1rem;
+    }
 }

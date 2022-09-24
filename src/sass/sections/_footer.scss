@@ -5,9 +5,16 @@ footer {
     color: $c_white;
     font-family: $footerfont;
     margin-top: 3rem;
-    padding: 3rem $sidepadding;
+    padding: 3rem $sidepadding * 1rem;
 
     .timber {
         font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: $mediaBreakPoint4) {
+    footer {
+        padding-left: $sidepadding2 * 1rem;
+        padding-right: $sidepadding2 * 1rem;
     }
 }

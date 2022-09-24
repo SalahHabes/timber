@@ -65,16 +65,34 @@
     }
 }
 
+
 @media only screen and (min-width: 600px) {
-     
     .landing {
-        height: 40vh;
+        padding-top: 2rem;
+        height: 70vh;
+    }
+
+    .catchphrase {
+        font-size: 10vmin;
+    }
+
+    .downloadButtons {
+        position: absolute;
+        bottom: 0;
     }
 
     .trees {
-        position: absolute;
-        right: 5vw;
-        top: 14rem;
-        width: fit-content;
+        height: 70%;
+    }
+}
+
+@media only screen and (min-width: $mediaBreakPoint4) {
+    .landing {
+        padding-left: $sidepadding2 * 1rem;
+        padding-right: $sidepadding2 * 1rem;
+    }
+
+    .trees {
+        right: $sidepadding2 * 1rem;
     }
 }
