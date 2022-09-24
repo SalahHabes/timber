@@ -5,10 +5,47 @@
     justify-content: space-between;
     background-color: $c_green;
     margin: 0;
-    padding: 2rem $sidepadding 3rem $sidepadding;
+    padding: 2rem $sidepadding * 1rem 3rem $sidepadding * 1rem;
 
     .menu {
         display: inline-flex;
         align-items: center;
     }
+}
+
+.menuicon {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+}
+
+.links {
+    font-family: $linksfont;
+    display: none;
+    position: relative;
+    width: fit-content;
+    a {
+        color: $c_white;
+        padding-right: 1rem;
+        text-decoration: none;
+    }
+    z-index: 2;
+    top: 2rem;
+}
+
+.menuicon:hover .links {
+    display: block;
+    
+}
+
+@media only screen and (min-width: $mediaBreakPoint2) {
+    
+    .links {
+        display: inline;
+    }
+
+    .menuicon {
+        display: none;
+    }
+    
 }

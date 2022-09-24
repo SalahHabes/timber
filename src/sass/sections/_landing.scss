@@ -1,0 +1,80 @@
+@use '../abstracts' as *;
+
+.catchphrase {
+    font-family: $catchphrasefont;
+    color: $c_white;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.landing {
+    background-color: $c_green;
+    padding: 0 $sidepadding * 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.downloadButtons {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+    #downloadApplestore {
+        margin-bottom: 1rem;
+    }
+
+    #downloadGoogleplay {
+        margin-bottom: $sidepadding * 1rem;
+    }
+}
+
+.trees {
+    display: inline-block;
+    height: 50vw;
+    width: 100%;
+    min-width: 128.367px;
+    min-height: 180px;
+    position: relative;
+    bottom: -5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: $mediaBreakPoint1) {
+    .trees {
+        width: fit-content;
+        position: absolute;
+        bottom: -1%;
+        right: $sidepadding * 1rem;
+    }
+}
+
+@media only screen and (min-width: $mediaBreakPoint2) {
+
+    .catchphrase {
+        width: 70%;
+    }
+    
+    .downloadButtons {
+        flex-direction: row;
+    }
+
+    #downloadApplestore {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+     
+    .landing {
+        height: 40vh;
+    }
+
+    .trees {
+        position: absolute;
+        right: 5vw;
+        top: 14rem;
+        width: fit-content;
+    }
+}

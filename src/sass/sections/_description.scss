@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.description {
+    font-family: $descriptionfont;
+    display: flex;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    padding: 5rem $sidepadding * 1rem;
+    justify-content: space-around;
+}
+
+.description-text {
+    text-align: justify;
+    text-justify: auto;
+    text-indent: 5rem;
+}

@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+.timberLogo {
+    font-family: $logofont;
+    display: flex;
+    align-items: center;
+    color: $c_white;
+    display: inline;
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}

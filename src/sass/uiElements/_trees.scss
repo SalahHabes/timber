@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.tree--Small {
+    height: 25%;
+}
+
+.tree--Medium {
+    height:  50%;
+}
+
+.tree--Big {
+    height: 100%;
+}

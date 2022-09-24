@@ -6,8 +6,8 @@
     background-color: $c_green;
     border-radius: 50%;
     height: 20rem;
-    width: 20rem;
-    .tree {
+    min-width: 20rem;
+    img {
         position: relative;
         top: 0.5rem;
     }
