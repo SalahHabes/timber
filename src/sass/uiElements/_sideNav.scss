@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $c_dark;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+  
+.sideNavDarken {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: $c_dark;
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.sideNav a {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: $c_white;
+  display: block;
+  transition: 0.3s;
+}
+ 
+.sideNav a:hover {
+  color: $c_white_active;
+}
+ 
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {padding-top: 15px;}
+  .sideNav a {font-size: 18px;}
+}

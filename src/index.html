@@ -11,7 +11,7 @@
     <div class="navbar">
         <h1 class="timberLogo">timber</h1>
         <div class="menu">
-            <img class="menuicon" src="./assets/whitemenuicon.png" alt="">
+            <img class="menuicon" src="./assets/whitemenuicon.png" alt="" onclick="openNav()">
             <div class="links">
                 <a href="">contact</a>
                 <a href="">pricing</a>
@@ -95,5 +95,31 @@
         el chatla el traya. <br>
         Terms of Service · Privacy Policy <br>
     </footer>
+
+    <div id="sideNavDarken" class="sideNavDarken"></div>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="">contact</a>
+        <a href="">pricing</a>
+        <a href="">download</a>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "50vw";
+            document.getElementById("sideNavDarken").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("sideNavDarken").style.opacity = "50%";
+            }, this.animationDelay + 20); 
+        }
+        
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.getElementById("sideNavDarken").style.display = "none";
+            setTimeout(() => {
+                document.getElementById("sideNavDarken").style.opacity = "0%";
+            }, this.animationDelay + 20); 
+        }
+    </script>
 </body>
 </html>
