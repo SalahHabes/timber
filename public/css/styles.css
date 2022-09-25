@@ -1,1 +1,360 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Ruda:wght@400;900&family=Saira&display=swap");.icon{margin-right:.3rem;width:1.35375rem}.uiButton,.uiButton--Trans,.uiButton--Trans--Dark{align-items:center;background-color:#131313;border:0;border-radius:.3rem;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-flex;font-family:Trebuchet MS;font-size:.6875rem;font-weight:700;height:2.9375rem;justify-content:center;min-width:7.125rem}.uiButton--Trans,.uiButton--Trans--Dark{background-color:transparent;border:.2rem solid #fff}.uiButton--Trans--Dark{border-color:#131313;color:#131313}.sphere{background-color:#025400;border-radius:50%;display:inline-flex;height:20rem;justify-content:space-around;min-width:20rem}.sphere img{position:relative;top:.5rem}.dealCard{border:.2rem solid #131313;border-radius:.3rem;box-sizing:border-box;font-size:2rem;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;margin-top:3rem;padding:0 1rem;text-align:center;width:20rem}.dealCard .title{border-bottom:.2rem solid #131313}.dealCard .price{border-bottom:.5rem;font-weight:900}.dealCard ul{font-size:1rem;text-align:left}.dealCard .uiButton,.dealCard .uiButton--Trans--Dark{margin-bottom:1rem;position:relative;width:100%}.timberLogo{align-items:center;color:#fff;display:flex;display:inline;font-family:Saira,monospace;font-size:3rem;font-weight:400;margin:0}.tree--Small{height:25%}.tree--Medium{height:50%}.tree--Big{height:100%}.sideNav{height:100%;overflow-x:hidden;padding-top:60px;right:0;width:0;z-index:1}.sideNav,.sideNavDarken{background-color:#131313;position:fixed;top:0;transition:.5s}.sideNavDarken{display:none;height:100vh;opacity:0;width:100vw}.sideNav a{color:#fff;display:block;font-size:25px;padding:.5rem .5rem .5rem 2rem;text-decoration:none;transition:.3s}.sideNav a:hover{color:#aaa}.sideNav .closebtn{font-size:2rem;left:0;position:absolute;top:0}@media screen and (max-height:450px){.sideNav{padding-top:15px}.sideNav a{font-size:18px}}.navbar{background-color:#025400;display:flex;justify-content:space-between;margin:0;padding:2rem 1.5rem 3rem}.navbar .menu{align-items:center;display:inline-flex}.menuicon{cursor:pointer;display:inline-block;position:relative;width:2rem}.links{display:none;font-family:Ruda,monospace;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.links a{color:#fff;padding-right:1rem;text-decoration:none}.menuicon:hover .links{display:block}@media only screen and (min-width:500px){.links{display:inline}.menuicon{display:none}}@media only screen and (min-width:900px){.navbar{padding-left:6rem;padding-right:6rem}}.catchphrase{color:#fff;font-family:Barlow Condensed,sans-serif;font-size:3rem;font-weight:bolder;margin-bottom:3rem;width:100%}.landing{background-color:#025400;margin-bottom:2rem;padding:0 1.5rem;position:relative}.downloadButtons{display:flex;flex-direction:column;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.downloadButtons #downloadApplestore{margin-bottom:1rem}.downloadButtons #downloadGoogleplay{margin-bottom:1.5rem}.trees{bottom:-5px;display:inline-block;height:50vw;min-height:180px;min-width:128.367px;position:relative;text-align:center;width:100%}@media only screen and (min-width:360px){.trees{bottom:-1%;position:absolute;right:1.5rem;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}}@media only screen and (min-width:500px){.catchphrase{width:70%}.downloadButtons{flex-direction:row}#downloadApplestore{margin-right:1rem}}@media only screen and (min-width:600px){.landing{height:70vh;padding-top:2rem}.catchphrase{font-size:10vmin}.downloadButtons{bottom:0;position:absolute}.trees{height:70%}}@media only screen and (min-width:900px){.landing{padding-left:6rem;padding-right:6rem}.trees{right:6rem}}.description{align-items:center;display:flex;flex-wrap:wrap;font-family:Trebuchet MS;font-size:1.5rem;justify-content:space-around;padding:5rem 1.5rem}.description-text{text-align:justify;text-indent:5rem;text-justify:auto}@media only screen and (min-width:800px){.description .sphere{height:20vw;min-width:20vw}.description-text{width:55vw}}@media only screen and (min-width:900px){.description{padding-left:6rem;padding-right:6rem}}.deals{background-color:#fff;display:flex;flex-wrap:wrap;font-family:Trebuchet MS;justify-content:space-around;padding:1.5}@media only screen and (min-width:900px){.deals{padding-left:6rem;padding-right:6rem}}footer{background-color:#025400;color:#fff;font-family:Trebuchet MS;margin-top:3rem;padding:3rem 1.5rem}footer .timber{font-size:2.5rem}@media only screen and (min-width:900px){footer{padding-left:6rem;padding-right:6rem}}body{background-color:#fff;margin:0}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Ruda:wght@400;900&family=Saira&display=swap");
+.icon {
+  width: 1.35375rem;
+  margin-right: 0.3rem;
+}
+
+.uiButton, .uiButton--Trans, .uiButton--Trans--Dark {
+  background-color: #131313;
+  border: 0;
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 7.125rem;
+  height: 2.9375rem;
+  font-size: 0.6875rem;
+  font-family: "Trebuchet MS";
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  font-weight: 700;
+  cursor: pointer;
+}
+.uiButton--Trans, .uiButton--Trans--Dark {
+  background-color: transparent;
+  border: solid #ffffff 0.2rem;
+}
+.uiButton--Trans--Dark {
+  border-color: #131313;
+  color: #131313;
+}
+
+.sphere {
+  display: inline-flex;
+  justify-content: space-around;
+  background-color: #025400;
+  border-radius: 50%;
+  height: 20rem;
+  min-width: 20rem;
+}
+.sphere img {
+  position: relative;
+  top: 0.5rem;
+}
+
+.dealCard {
+  box-sizing: border-box;
+  border: solid #131313 0.2rem;
+  border-radius: 0.3rem;
+  font-size: 2rem;
+  height: fit-content;
+  margin-top: 3rem;
+  padding: 0 1rem;
+  text-align: center;
+  width: 20rem;
+}
+.dealCard .title {
+  border-bottom: solid #131313 0.2rem;
+}
+.dealCard .price {
+  font-weight: 900;
+  border-bottom: 0.5rem;
+}
+.dealCard ul {
+  text-align: left;
+  font-size: 1rem;
+}
+.dealCard .uiButton, .dealCard .uiButton--Trans--Dark {
+  width: 100%;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.timberLogo {
+  font-family: "Saira", monospace;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  display: inline;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.tree--Small {
+  height: 25%;
+}
+
+.tree--Medium {
+  height: 50%;
+}
+
+.tree--Big {
+  height: 100%;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #131313;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideNavDarken {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #131313;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.sideNav a {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover {
+  color: #aaaaaa;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+  .sideNav a {
+    font-size: 18px;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #025400;
+  margin: 0;
+  padding: 2rem 1.5rem 3rem 1.5rem;
+}
+.navbar .menu {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menuicon {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.links {
+  font-family: "Ruda", monospace;
+  display: none;
+  width: fit-content;
+}
+.links a {
+  color: #ffffff;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+.menuicon:hover .links {
+  display: block;
+}
+
+@media only screen and (min-width: 500px) {
+  .links {
+    display: inline;
+  }
+  .menuicon {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .navbar {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+.catchphrase {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.landing {
+  background-color: #025400;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.downloadButtons {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.downloadButtons #downloadApplestore {
+  margin-bottom: 1rem;
+}
+.downloadButtons #downloadGoogleplay {
+  margin-bottom: 1.5rem;
+}
+
+.trees {
+  display: inline-block;
+  height: 50vw;
+  width: 100%;
+  min-width: 128.367px;
+  min-height: 180px;
+  position: relative;
+  bottom: -5px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 360px) {
+  .trees {
+    width: fit-content;
+    position: absolute;
+    bottom: -1%;
+    right: 1.5rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .catchphrase {
+    width: 70%;
+  }
+  .downloadButtons {
+    flex-direction: row;
+  }
+  #downloadApplestore {
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .landing {
+    padding-top: 2rem;
+    height: 70vh;
+  }
+  .catchphrase {
+    font-size: 5.5rem;
+  }
+  .downloadButtons {
+    position: absolute;
+    bottom: 0;
+  }
+  .trees {
+    height: 70%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .landing {
+    height: 30rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .trees {
+    right: 6rem;
+  }
+}
+.description {
+  font-family: "Trebuchet MS";
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  padding: 5rem 1.5rem;
+  justify-content: space-around;
+}
+
+.description-text {
+  text-align: justify;
+  text-justify: auto;
+  text-indent: 5rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .description .sphere {
+    height: 20vw;
+    min-width: 20vw;
+  }
+  .description-text {
+    width: 55vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .description {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  .description .sphere {
+    max-width: 288px;
+    min-width: 288px;
+    width: 288px;
+    height: 288px;
+  }
+  .description-text {
+    width: 792px;
+  }
+}
+.deals {
+  font-family: "Trebuchet MS";
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.5;
+}
+
+@media only screen and (min-width: 900px) {
+  .deals {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+footer {
+  background-color: #025400;
+  color: #ffffff;
+  font-family: "Trebuchet MS";
+  margin-top: 3rem;
+  padding: 3rem 1.5rem;
+}
+footer .timber {
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+main {
+  margin: auto;
+  max-width: 1500px;
+}

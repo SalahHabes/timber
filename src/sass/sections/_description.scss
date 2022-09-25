@@ -35,4 +35,18 @@
         padding-left: $sidepadding2 * 1rem;
         padding-right: $sidepadding2 * 1rem;
     }
+
+    .description {
+        .sphere {
+            
+            max-width: 288px;
+            min-width: 288px;
+            width: 288px;
+            height: 288px;
+        }
+    }
+
+    .description-text {
+        width: 792px;
+    }
 }

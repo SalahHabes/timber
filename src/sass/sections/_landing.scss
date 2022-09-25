@@ -73,7 +73,7 @@
     }
 
     .catchphrase {
-        font-size: 10vmin;
+        font-size: 5.5rem;
     }
 
     .downloadButtons {
@@ -88,6 +88,8 @@
 
 @media only screen and (min-width: $mediaBreakPoint4) {
     .landing {
+        height: 30rem;
+        
         padding-left: $sidepadding2 * 1rem;
         padding-right: $sidepadding2 * 1rem;
     }
